@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>! ! ! ! ! ! ! ! !  Important  ! ! ! ! ! ! ! ! !
+To ensure memory for the process is cleared and results are accurate for each individual test:
+Close and restart the application each time you run a test, and always run Release build executable.</value>
+  </data>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>This tester tries to simulate a very busy IIS web server;  creating tons of large short-lived objects simulating being generated by things like splitting and parsing large JSON strings, large HTML pages, and large XML documents, while at the same time, creating and storing some large long-lived objects in a list for the life of the program simulating being generated by things like large numbers of customer and shopping cart data, large cached objects and large lookup table data, large product price lists, large select lists used in list and combo box controls, etc...</value>
+  </data>
+  <data name="textBox10.Text" xml:space="preserve">
+    <value>The tests in this tester are purposely designed to create the precise conditions necessary to induce massive fragmentation of the Large Object Heap (LOH) in the .NET GC. To induce massive fragmentation, you must mix short-lived and long-lived objects. You must create lots of short-lived objects, while at the same time creating some long-lived objects. After the short-lived objects have been destroyed, there will be gaps of fragmentation remaining between the long-lived objects. In some cases, the gaps of fragmentation can be reused and refilled with new objects. However, many times the gaps of fragmentation are unable to be reused by the new objects. Moreover, even when a new object is in-fact able to reuse a gap of fragmentation, often times the new object is somewhat smaller than the gap, leaving smaller gaps of fragmentation that will NEVER be refilled, since they're much smaller than the minimum size object allowed on the LOH (i.e. 85,000 bytes).
+
+The tests are designed to make it easy to compare techniques which use the LOH, to techniques that DO NOT use the LOH.
+
+
+These tests attempt to simulate a very busy IIS web server;  creating tons of short-lived objects, while at the same time, creating some long-lived objects that are being stored in a cache list for the life of the program.
+
+The short-lived objects are simulating quick temporary transient things like splitting and parsing large JSON strings, large HTML pages, and large XML documents. For example, the .NET string split function uses an int[] set to the length of the string inside its internal implementation code, which will go on the LOH when the string reaches approx. 21,250 characters (i.e. 21,250 * 4 bytes per int = 85,000 bytes).
+
+The long-lived objects are simulating more permanent non-transient things like large numbers of customer and shopping cart data, large cached objects and large lookup table data, large product price lists, large select lists of id numbers used in list and combo box controls, etc.
+
+The final results of each test are written to a results text file in the application directory when the test stops, and include various memory statistics. For example, you can run a test using a LOH technique. Then, run another test using a No LOH technique. Now, you can easily compare the statistical data of the two different techniques (LOH vs. No LOH) side by side.
+
+There are 4 tabs, each having a separate distinct test simulation, designed to compare fragmentation of the LOH caused by the built-in .NET Framework classes versus our new technique (NoLOH.dll). There's a separate tab for each class in NoLOH.dll, allowing you to run a separate test comparison simulation for each individual class. The remaining tabs are simply code samples showing examples of how to code our new technique (which doesn't use the LOH), and the roughly equivelant corresponding .NET Framework code (which does use the LOH). Additionally, the remaining tabs also include some code examples showing various other miscellaneous ways to use the new technique classes in NoLOH.dll.</value>
+  </data>
+  <data name="textBox18.Text" xml:space="preserve">
+    <value>** For a much more detailed memory report, including LOH fragmentation, run:
+         WinDbg.exe commands:  .loadby sos clr and !heapstat, or
+                                                      .loadby sos clr and !eeheap -gc and !dumpheap
+          (see top comments portion of NoLOH.cs file for more instructions)</value>
+  </data>
+  <data name="textBox6.Text" xml:space="preserve">
+    <value>This test tries to simulate a very busy IIS web server;  creating tons of short-lived array objects, while at the same time, creating some long-lived array objects that are being stored in a cached list for the life of the program.
+
+The short-lived array objects are trying to simulate some temporary quick transient things, like the string split function used when parsing a large string. (i.e. the .NET string.Split() function which uses an int[] set to the length of the string inside its internal implementation code).
+
+The long-lived objects are trying to simulate some more permanent non-transient things that stay around for the life of the program, like large numbers of customer and shopping cart data, large collections of cached objects, large data lookup tables, large product price lists, large select lists used in list and combo box controls, etc, etc.</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Test Instructions:
+
+     LOH Test
+
+          1)  Press both "Start Creating" buttons at same time  (with using "LOH" options selected)
+ 
+     No LOH Test
+
+          1)  Press both "Start Creating" buttons at same time  (with using "No LOH" options selected)
+
+Test results text file will be created in application directory when test stops.  **</value>
+  </data>
+  <data name="textBox27.Text" xml:space="preserve">
+    <value>** For a much more detailed memory report, including LOH fragmentation, run:
+         WinDbg.exe commands:  .loadby sos clr and !heapstat, or
+                                                      .loadby sos clr and !eeheap -gc and !dumpheap
+          (see top comments portion of NoLOH.cs file for more instructions)</value>
+  </data>
+  <data name="textBox23.Text" xml:space="preserve">
+    <value>Test Instructions:
+
+     LOH Test
+
+          1)  Press both "Start Serializing" and "Start Creating" buttons at same time  (with using "LOH" options selected)
+ 
+     No LOH Test
+
+          1)  Press both "Start Serializing" and "Start Creating" buttons at same time  (with using "No LOH" options selected)
+
+Test results text file will be created in application directory when test stops.  **</value>
+  </data>
+  <data name="textBox9.Text" xml:space="preserve">
+    <value>This test tries to simulate a very busy IIS web server;  creating tons of large short-lived objects (caused by serializing objects), while at the same time, creating some long-lived objects that are being stored in a cached list for the life of the program.
+
+The short-lived objects are simulating temporary transient objects being caused by things like serializing large collections of objects, large lists of objects, etc.
+
+The long-lived objects are simulating more permanent non-transient objects that stay around for the life of the program being caused by things like large numbers of customer and shopping cart data, large collections of cached objects, large data lookup tables, large product price lists, large select lists used in list and combo box controls, etc, etc.</value>
+  </data>
+  <data name="textBox28.Text" xml:space="preserve">
+    <value>** For a much more detailed memory report, including LOH fragmentation, run:
+         WinDbg.exe commands:  .loadby sos clr and !heapstat, or
+                                                      .loadby sos clr and !eeheap -gc and !dumpheap
+          (see top comments portion of NoLOH.cs file for more instructions)</value>
+  </data>
+  <data name="textBox7.Text" xml:space="preserve">
+    <value>This test tries to simulate a very busy IIS web server;  creating tons of large short-lived objects (caused by the string split function), while at the same time, creating some long-lived objects that are being stored in a cached list for the life of the program.
+
+The short-lived objects are simulating temporary transient objects being caused by things like splitting and parsing large JSON strings, large HTML pages, and large XML documents.
+
+The long-lived objects are simulating more permanent non-transient objects that stay around for the life of the program being caused by things like large numbers of customer and shopping cart data, large collections of cached objects, large data lookup tables, large product price lists, large select lists used in list and combo box controls, etc, etc.</value>
+  </data>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>Test Instructions:
+
+     LOH Test
+
+          1)  Press both "Start Splitting" and "Start Creating" buttons at same time  (with using "LOH" options selected)
+ 
+     No LOH Test
+
+          1)  Press both "Start Splitting" and "Start Creating" buttons at same time  (with using "No LOH" options selected)
+
+Test results text file will be created in application directory when test stops.  **</value>
+  </data>
+  <data name="textBox13.Text" xml:space="preserve">
+    <value>Tests Instructions:
+
+     LOH Test
+
+          1)  Press "String Split" button  (with using "LOH" option selected)
+
+     No LOH Test
+
+          1)  Press "String Split" button  (with using "No LOH" option selected)
+
+     No LOH Test  (Lazy Loading)
+
+          1)  Press "String Split" button  (with using "No LOH (Lazy-Loading)" option selected)
+
+
+MessageBox will show with elapsed time.</value>
+  </data>
+  <data name="textBox8.Text" xml:space="preserve">
+    <value>This test allows you to compare the overall speed of splitting a large string using the LOH (utilizing the existing .NET string split function), to the overall speed of splitting a large string NOT using to LOH (utilizing our new code library NoLOH.dll). Suprisingly, the string you're splitting doesn't have to be all that large to go on the LOH. The existing .NET string.Split() will use the LOH when the string's over approx. 21,250 characters. The current string.Split() implementation code in the .NET CLR, internally uses an int[] set to the size of the string in order to keep track of the split delimiter locations. This large int[] (i.e. approx. int[21250] or greater) goes on the LOH when the string is split. The string itself goes on the LOH when it's over approx. 42,500 characters (because there's 2 bytes per char due to unicode).
+
+LOH  --  splits the string using the existing built-in .NET string.Split() function.
+
+No LOH  --  splits the string using our new string.SplitNoLOH() extension method.
+
+No LOH (Lazy-Loading)  --  splits the string using our new string.SplitLazyLoad() extension method.</value>
+  </data>
+  <data name="textBox19.Text" xml:space="preserve">
+    <value>
+    using (ArrayNoLOH&lt;byte&gt; bytes = new ArrayNoLOH&lt;byte&gt;(100000))
+    {
+        for (int i = 0 ; i &lt; bytes.Count ; i++)
+        {
+            bytes[i] = 0x1;
+        }
+
+        foreach (byte b in bytes)
+        {
+            Debug.WriteLine(b.ToString("x02"));
+        }
+    }</value>
+  </data>
+  <data name="textBox16.Text" xml:space="preserve">
+    <value>
+    byte[] bytes = new byte[100000];
+
+        for (int i = 0 ; i &lt; bytes.GetLength(0) ; i++)
+        {
+            bytes[i] = 0x1;
+        }
+
+        foreach (byte b in bytes)
+        {
+            Debug.WriteLine(b.ToString("x02"));
+        }
+
+    bytes = null;</value>
+  </data>
+  <data name="textBox21.Text" xml:space="preserve">
+    <value>
+    private ArrayNoLOH&lt;byte&gt; SerializeNoLOH(object items)
+    {
+        using (MemoryStreamNoLOH ms = new MemoryStreamNoLOH())
+        {
+            BinaryFormatter binary = new BinaryFormatter();
+            binary.Serialize(ms, items);    //doesn't use LOH
+            ArrayNoLOH&lt;byte&gt; bytes = ms.ToArray();    //doesn't use LOH
+            return bytes;
+        }
+    }
+    private object DeserializeNoLOH(ArrayNoLOH&lt;byte&gt; bytes)
+    {
+        using (UnmanagedMemoryStreamEx ms = new UnmanagedMemoryStreamEx(bytes))
+        {
+            BinaryFormatter binary = new BinaryFormatter();
+            return binary.Deserialize(ms);
+        }
+    }
+
+------------------------------------------------------------ or ----------------------------------------------------------------
+
+    private MemoryStreamNoLOH SerializeNoLOHStream(object items)
+    {
+        MemoryStreamNoLOH ms = new MemoryStreamNoLOH();
+        BinaryFormatter binary = new BinaryFormatter();
+        binary.Serialize(ms, items);    //doesn't use LOH
+        return ms;
+    }
+    private object DeserializeNoLOHStream(MemoryStreamNoLOH stream)
+    {
+        using (stream)    //must Dispose() stream to release unmanaged memory
+        {
+            stream.Position = 0;
+            BinaryFormatter binary = new BinaryFormatter();
+            return binary.Deserialize(stream);
+        }
+    }</value>
+  </data>
+  <data name="textBox20.Text" xml:space="preserve">
+    <value>
+    private byte[] Serialize(object items)
+    {
+        using (MemoryStream ms = new MemoryStream())
+        {
+            BinaryFormatter binary = new BinaryFormatter();
+            binary.Serialize(ms, items);    //uses LOH
+            byte[] bytes = ms.ToArray();    //uses LOH
+            return bytes;
+        }
+    }
+    private object Deserialize(byte[] bytes)
+    {
+        using (MemoryStream ms = new MemoryStream(bytes))
+        {
+            BinaryFormatter binary = new BinaryFormatter();
+            return binary.Deserialize(ms);
+        }
+    }</value>
+  </data>
+  <data name="textBox12.Text" xml:space="preserve">
+    <value>
+    foreach (string part in text.SplitNoLOH('^'))
+    {
+    }
+
+---------------------------------------------- or -----------------------------------------------
+
+    StringArrayNoLOH parts = text.SplitNoLOH('^');
+    foreach (string part in parts)
+    {
+    }
+
+---------------------------------------------- or -----------------------------------------------
+
+    using (StringArrayNoLOH parts = text.SplitNoLOH('^'))
+    {
+        for (int i = 0; i &lt; parts.Count; i++)
+        {
+            string part = parts[i];
+        }
+    }
+
+---------------------------------------------- or -----------------------------------------------
+
+    using (StringArrayNoLOH parts = text.SplitNoLOH('^', EnumerationBehavior.DoNotDisposeAfterEnumerated))
+    {
+        for (int i = 0; i &lt; parts.Count; i++)
+        {
+            string part = parts[i];
+        }
+        foreach (string part in parts)
+        {
+        }
+    }
+
+---------------------------------------------- or -----------------------------------------------
+
+    foreach (string part in text.SplitLazyLoad('^'))    // fastest !!!
+    {
+    }</value>
+  </data>
+  <data name="textBox11.Text" xml:space="preserve">
+    <value>
+    foreach (string part in text.Split('^'))
+    {
+    }
+
+----------------------------------------- or -------------------------------------------------
+
+    string[] parts = text.Split('^');
+    foreach (string part in parts)
+    {
+    }
+
+----------------------------------------- or -------------------------------------------------
+
+    string[] parts = text.Split('^');
+    for (int i = 0; i &lt; parts.GetLength(0); i++)
+    {
+        string part = parts[i];
+    }</value>
+  </data>
+  <data name="txtCode2.Text" xml:space="preserve">
+    <value>private ArrayNoLOH&lt;byte&gt; SerializeNoLOH(object items)
+{
+    using (MemoryStreamNoLOH ms = new MemoryStreamNoLOH())
+    {
+        new BinaryFormatter().Serialize(ms, items);
+        return ms.ToArray();
+    }
+}</value>
+  </data>
+  <data name="textBox25.Text" xml:space="preserve">
+    <value>
+  (21,500 int array / 32-bit)
+
+
+------------------------------ int[] -----------------------------------------
+
+LOH -- Before
+
+      MT    Count    TotalSize Class Name
+001c8450        7          112      Free
+6ff36c28        6        34272 System.Object[]
+
+LOH -- After calling new int[21500]
+
+001c8450        8          128      Free
+6ff36c28        6        34272 System.Object[]
+6ff82938        1        86016 System.Int32[]      &lt;&lt;&lt;&lt;----------
+
+-------------------- ArrayNoLOH&lt;int&gt;() -----------------------------
+
+LOH -- Before
+
+00438760        7          112      Free
+6ff36c28        6        34272 System.Object[]
+
+LOH -- After calling new ArrayNoLOH&lt;int&gt;(21500)
+
+00438760        7          112      Free
+6ff36c28        6        34272 System.Object[]</value>
+  </data>
+  <data name="textBox24.Text" xml:space="preserve">
+    <value>
+  (86,000 character string / 32-bit)
+
+
+---------------------- string.Split -------------------------------------
+
+LOH -- Before
+
+      MT    Count    TotalSize Class Name
+00398450        8          128      Free
+6ff36c28        6        34272 System.Object[]
+6ff7f9ac        1       172016 System.String
+
+LOH -- After calling Split()
+
+00398450        9          144      Free
+6ff36c28        6        34272 System.Object[]
+6ff7f9ac        1       172016 System.String
+6ff82938        1       344016 System.Int32[]     &lt;&lt;&lt;&lt;----------
+
+-------------------- string.SplitNoLOH ------------------------------
+
+LOH -- Before
+
+000b8450        8          128      Free
+6ff36c28        6        34272 System.Object[]
+6ff7f9ac        1       172016 System.String
+
+LOH -- After calling SplitNoLOH()
+
+000b8450        8          128      Free
+6ff36c28        6        34272 System.Object[]
+6ff7f9ac        1       172016 System.String
+
+
+!!! Note:  Even splitting a string as small as 21,500
+characters still causes a transient int[] to go on the LOH...
+
+00098450        8          128      Free
+70016c28        6        34272 System.Object[]
+70062938        1        86016 System.Int32[]      &lt;&lt;&lt;&lt;----------</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>
+  (1400 customer objects (List&lt;T&gt;) / binary serializer / 32-bit)
+
+
+--------------------- MemoryStream ----------------------------------
+
+LOH -- Before
+
+      MT    Count    TotalSize Class Name
+00078450        7          112      Free
+6ff36c28        6        34272 System.Object[]
+
+LOH -- After calling Serialize()
+
+00078450        8          128      Free
+6ff36c28        6        34272 System.Object[]
+6ff84944        1       131088 System.Byte[]      &lt;&lt;&lt;&lt;----------
+
+LOH -- After calling ToArray()
+
+00078450        9          144      Free
+6ff36c28        6        34272 System.Object[]
+6ff84944        2       217088 System.Byte[]      &lt;&lt;&lt;&lt;----------
+
+----------------- MemoryStreamNoLOH --------------------------
+
+LOH -- Before
+
+00228450        7          112      Free
+6ff36c28        6        34272 System.Object[]
+
+LOH -- After calling Serialize()
+
+00228450        7          112      Free
+6ff36c28        6        34272 System.Object[]
+
+LOH -- After calling ToArray()
+
+00228450        7          112      Free
+6ff36c28        6        34272 System.Object[]
+</value>
+  </data>
+  <data name="textBox17.Text" xml:space="preserve">
+    <value>-----------------------------------------------------------------------
+using (ArrayNoLOH&lt;byte&gt; a = new ArrayNoLOH&lt;byte&gt;(90000))
+{
+    FillMemory(a.AddressOf, a.Count, 0x1);
+}
+unsafe
+{
+    byte[] bytes = new byte[90000];
+    fixed (byte* b = &amp;bytes[0])
+    {
+        FillMemory((IntPtr)b, 90000, 0x1);
+    }
+}
+-----------------------------------------------------------------------
+public class DerivedClass : BaseClass
+{
+    unsafe public DerivedClass (ArrayNoLOH&lt;byte&gt; array)
+        : base ((byte*)array.AddressOf, array.Count)
+    {
+    }
+}
+-----------------------------------------------------------------------
+ArrayNoLOH&lt;int&gt; a = new ArrayNoLOH&lt;int&gt;(100);
+    for (int x = 0; x &lt; a.Count; x++)
+    {
+        a[x] = x;
+    }
+
+    //cast ArrayNoLOH&lt;int&gt; to int[]  (not recommended)
+    int[] i = (int[])a;
+    for (int x = 0; x &lt; i.GetLength(0); x++)
+    {
+        Debug.WriteLine(i[x].ToString());
+    }
+
+    //cast int[] to ArrayNoLOH&lt;int&gt;  (not recommended)
+    ArrayNoLOH&lt;int&gt; a2 = (ArrayNoLOH&lt;int&gt;)i;
+    for (int x = 0; x &lt; a2.Count; x++)
+    {
+        Debug.WriteLine(a2[x].ToString());
+    }
+a.Dispose();</value>
+  </data>
+  <data name="textBox15.Text" xml:space="preserve">
+    <value>-----------------------------------------------------------------------
+using (ArrayNoLOH&lt;byte&gt; a = new ArrayNoLOH&lt;byte&gt;(90000))
+{
+    for (int x = 0; x &lt; a.Count; x++)
+    {
+        a[x] = 0x1;
+    }
+    foreach (byte b in a)
+    {
+        byte temp = b;
+    }
+}
+-----------------------------------------------------------------------
+using (ArrayNoLOH&lt;int&gt; a = new ArrayNoLOH&lt;int&gt;(25000,
+    EnumerationBehavior.DoNotDisposeAfterEnumerated))
+{
+    for (int i = 0; i &lt; a.Count; i++)
+    {
+        a[i] = i;
+    }
+    foreach (int i in a)
+    {
+        int temp = i;
+    }
+    IEnumerator&lt;int&gt; enumerator = a.GetEnumerator();
+    while (enumerator.MoveNext())
+    {
+        int temp = enumerator.Current;
+    }
+}
+-----------------------------------------------------------------------
+</value>
+  </data>
+  <data name="textBox14.Text" xml:space="preserve">
+    <value>-----------------------------------------------------------------------
+using (ArrayNoLOH&lt;byte&gt; a = new ArrayNoLOH&lt;byte&gt;(90000))
+{
+    a[0] = (byte)0x1;
+    a[1] = byte.MaxValue;
+    var temp = a[1];
+}
+-----------------------------------------------------------------------
+using (ArrayNoLOH&lt;int&gt; a = new ArrayNoLOH&lt;int&gt;(25000))
+{
+    a[0] = 100;
+    a[1] = int.MaxValue;
+    var temp = a[0];
+}
+-----------------------------------------------------------------------
+ArrayNoLOH&lt;long&gt; a = new ArrayNoLOH&lt;long&gt;(15000);
+    a[0] = 300;
+    a[10000] = long.MaxValue;
+    var temp = a[10000];
+a.Dispose();
+-----------------------------------------------------------------------
+//if change IIndexer&lt;T&gt; to public in NoLOH.cs
+IIndexer&lt;int&gt; i = new ArrayNoLOH&lt;int&gt;(30000);
+    i[0] = 200;
+    i[20000] = int.MaxValue;
+    var temp = i[20000];
+((ArrayNoLOH&lt;int&gt;)i).Dispose();
+-----------------------------------------------------------------------
+//if change IIndexer&lt;T&gt; to public in NoLOH.cs
+using (ArrayNoLOH&lt;byte&gt; a = new ArrayNoLOH&lt;byte&gt;(90000))
+{
+    IIndexer&lt;byte&gt; b = (IIndexer&lt;byte&gt;)a;
+    b[1] = (byte)0x2;
+    var temp = b[1];
+}
+-----------------------------------------------------------------------</value>
+  </data>
+  <data name="textBox26.Text" xml:space="preserve">
+    <value>-----------------------------------------------------------------------
+MemoryStreamNoLOH _ms = SerializeNoLOHStream(object items);
+
+using (TcpClient socket = new TcpClient())
+{
+    IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 7000);
+    socket.Connect(ep);
+
+    using (NetworkStream stream = socket.GetStream())
+    {
+        using (_ms)
+        {
+            _ms.CopyTo(stream);
+        }
+    }
+}
+-----------------------------------------------------------------------</value>
+  </data>
+  <data name="textBox22.Text" xml:space="preserve">
+    <value>-----------------------------------------------------------------------
+using (TcpClient socket = new TcpClient())
+{
+    IPEndPoint ep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 7000);
+    socket.Connect(ep);
+
+    using (NetworkStream stream = socket.GetStream())
+    {
+        using (MemoryStreamNoLOH ms = new MemoryStreamNoLOH())
+        {
+            BinaryFormatter binary = new BinaryFormatter();
+            binary.Serialize(ms, largeCollectionOfItems);
+            ms.Position = 0;
+            ms.CopyTo(stream);
+        }
+    }
+}
+-----------------------------------------------------------------------</value>
+  </data>
+</root>
